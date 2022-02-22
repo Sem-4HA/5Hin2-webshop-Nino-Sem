@@ -40,13 +40,12 @@ insert into products (name, description, code, price, adviesprijs, voorraad_id) 
 insert into products (name, description, code, price, adviesprijs,  voorraad_id) values ('Kiss for Corliss, A (Almost a Bride)', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14, 17, 1);
 insert into products (name, description, code, price, adviesprijs, voorraad_id) values ('Velvet Goldmine', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14, 40, 3);
 
+insert into voorraad (name) values ('ja');
+insert into voorraad (name) values ('nee');
+insert into voorraad (name) values ('binnekort');
 
-insert into voorraad (name) values ('ja')
-insert into voorraad (name) values ('nee')
-insert into voorraad (name) values ('binnekort')
-
-insert into winkels (name) values ('Rotterdam')
-insert into winkels (name) values ('Utrecht')
-insert into winkels (name) values ('Amsterdam')
-insert into winkels (name) values ('Groningen')
-insert into winkels (name) values ('Limburg')
+insert into winkels (name) values ('Rotterdam');
+insert into winkels (name) values ('Utrecht');
+insert into winkels (name) values ('Amsterdam');
+insert into winkels (name) values ('Groningen');
+insert into winkels (name) values ('Limburg');
