@@ -23,9 +23,10 @@
 		</div>
 	</div>
 
+ 
   <!-- menubalk -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Musical Shop</a>
+		<a class="navbar-brand" href="#"> Music Shop</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,13 +34,14 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Articles <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#">Artikelen <span class="sr-only">(current)</span></a>
 				</li>
 			</ul>
 			<a
 				href="basket.html"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Winkelwagen <span class="num_products"></span></button></a>
 		</div>
 	</nav>
+
 
   <!-- lijst met producten, wordt gevuld door javascript -->
 	<main id="index">
@@ -58,6 +60,7 @@
 				<div class="card-body">
 					<p class="product_description card-text"></p>
 					<ul class="product-properties">
+            <li><span class="propert-name">Adviesprijs:</span><span class="product_adviesprijs"></span></li>
 						<li><span class="propert-name">Prijs:</span><span class="product_price"></span></li>
 						<li><span class="propert-name">Code:</span><span class="product_code"></span></li>
 					</ul>
@@ -123,6 +126,7 @@
               clone.querySelector(".product_title").textContent = name
               clone.querySelector(".product_description").textContent =`${product.description.substr(0, 100)}...`
               clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
+              clone.querySelector(".product_adviesprijs").textContent = `€ ${product.adviesprijs.toFixed(2)}`
               clone.querySelector(".product_code").textContent = product.code
               clone.querySelector(".product_id").value = product.id
               clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
