@@ -13,9 +13,15 @@ CREATE TABLE products (
 );
 
 CREATE TABLE voorraad (
-id INTEGER PRIMARY KEY AUTOINCREMENT,
+ id INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR(255),
   voorraad TEXT
+);
+
+  CREATE TABLE winkels (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(255),
+  filiaal TEXT
 );
 
 --
@@ -37,4 +43,10 @@ insert into products (name, description, code, price, adviesprijs, voorraad_id) 
 
 insert into voorraad (name) values ('ja')
 insert into voorraad (name) values ('nee')
-  insert into voorraad (name) values ('binnekort')
+insert into voorraad (name) values ('binnekort')
+
+insert into winkels (name) values ('Rotterdam')
+insert into winkels (name) values ('Utrecht')
+insert into winkels (name) values ('Amsterdam')
+insert into winkels (name) values ('Groningen')
+insert into winkels (name) values ('Limburg')
